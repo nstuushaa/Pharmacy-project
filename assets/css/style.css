@@ -294,3 +294,30 @@ body {
     position: static !important;
   }
 }
+
+.alphabet-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #828282;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.alphabet-letter:hover {
+  color: #2FD3AE;
+  border-color: #2FD3AE;
+}
+
+.alphabet-letter.active {
+  color: #2FD3AE;
+  background: #F6FBFA;
+  border-color: #F6FBFA;
+  border-radius: 5px;
+}
