@@ -120,22 +120,206 @@
         <li><a class="nav-category-link" href="#"><img src="assets/img/baby-boy 1.svg" alt="" class="me-2">Мать и дитя</a></li>
         <li><a class="nav-category-link" href="#"><img src="assets/img/first-aid-kit 1.svg" alt="" class="me-2">Медтовары</a></li>
         <li><a class="nav-category-link" href="#"><img src="assets/img/dog 1.svg" alt="" class="me-2">Зоотовары</a></li>
-        <li><a class="nav-category-link" href>#<img src="assets/img/smartwatch 1.svg" alt="" class="me-2">Медтехника</a></li>
+        <li><a class="nav-category-link" href="#"><img src="assets/img/smartwatch 1.svg" alt="" class="me-2">Медтехника</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="container my-5">
-    <h1>Контент страницы</h1>
-    <p>Тут будет основной контент...</p>
-  </main>
+  <main class="container py-5">
+
+  <!-- Верхние кнопки-категории (Акции, Скидки, COVID-19 и т.д.) -->
+  <div class="category-tabs mb-5 overflow-x-auto scrollbar-hidden">
+    <div class="d-flex gap-3 pb-2" style="min-width: max-content;">
+      <a href="#" class="btn px-4 py-2" style="border-radius: 5px; background-color: #4BC1E9; color: white;">
+        <img src="/assets/img/percent.svg"/>
+        Акции</a>
+        <a href="#" class="btn px-4 py-2" style="border-radius: 5px; background-color: #FF9E19; color: white;">
+        <img src="/assets/img/ruble.svg"/>
+        Скидки</a>
+      <a href="#" class="btn px-4 py-2 text-dark shadow-sm" 
+        style="border-radius: 8px; color: #4F4F4F; border: 1px solid #e9e9e9;">
+        COVID-19
+      </a>
+      <a href="#" class="btn px-4 py-2 text-dark shadow-sm" 
+        style="border-radius: 8px; color: #4F4F4F; border: 1px solid #e9e9e9;">
+        Аллергия</a>
+      <a href="#" class="btn px-4 py-2 text-dark shadow-sm" 
+        style="border-radius: 8px; color: #4F4F4F; border: 1px solid #e9e9e9;">
+        Лечебная косметика</a>
+      <a href="#" class="btn px-4 py-2 text-dark shadow-sm" 
+        style="border-radius: 8px; color: #4F4F4F; border: 1px solid #e9e9e9;">
+        Кишечник</a>
+      <a href="#" class="btn px-4 py-2 text-dark shadow-sm" 
+        style="border-radius: 8px; color: #4F4F4F; border: 1px solid #e9e9e9;">
+        Молочница</a>
+      <a href="#" class="btn px-4 py-2 text-dark shadow-sm" 
+        style="border-radius: 8px; color: #4F4F4F; border: 1px solid #e9e9e9;">
+        Суставы</a>
+     <a href="#" class="btn px-4 py-2 text-dark shadow-sm" 
+        style="border-radius: 8px; color: #4F4F4F; border: 1px solid #e9e9e9;">
+        Еще 52</a>
+    </div>
+  </div>
+<!-- Два баннера бок о бок -->
+<div class="row g-4 align-items-center">
+
+  <!-- Левый баннер (Oral-B) — без изменений -->
+  <div class="col-lg-6">
+    <div class="banner-left rounded-4 overflow-hidden position-relative text-white" 
+        style="background: linear-gradient(135deg, #27AE60, #2F80ED); min-height: 480px;">
+      
+      <div class="position-relative z-2 p-5 p-lg-6" style="max-width: 55%;">
+        <h2 class="fw-bold mb-3" style="font-size: 40px; line-height: 1.1;">
+          Oral-B vitality<br>
+          <span style="font-weight: 300; font-size: 30px;">электрическая зубная щётка</span>
+        </h2>
+        <p class="lead mb-4" style="font-size: 16px; line-height: 1.5;">
+          Клинически доказано, что электрическая зубная щетка Oral-B Braun Vitality более эффективно очищает полость рта по сравнению с обычной мануальной зубной щёткой.
+        </p>
+        <a href="#" class="btn rounded-pill px-3 py-3 fw-semibold text-white shadow" 
+          style="background: #27AE60; font-size: 14px; display: inline-flex; align-items: center; gap: 8px;">
+          ПЕРЕЙТИ В КАТАЛОГ
+          <img src="assets/img/Arrow_right.svg" alt="" width="20">
+        </a>
+      </div>
+
+      <img src="assets/img/502896762_la-cimbali-m100i 1.svg" alt="Oral-B Vitality" 
+          class="position-absolute bottom-0 end-0" 
+          style="height: 92%; object-fit: contain; max-width: 55%; pointer-events: none;">
+    </div>
+  </div>
+
+  <!-- Правый блок: баннер Nivea + мини-товары справа от него (только на десктопе) -->
+  <div class="col-lg-6">
+    <div class="row g-4 align-items-center">
+
+      <!-- Второй баннер — теперь по центру по вертикали -->
+      <div class="col-12 col-xl-7 d-flex align-items-center">
+        <div class="banner-right rounded-4 overflow-hidden position-relative text-white w-100 text-center"
+            style="background: #FC647D; max-height: 410px; max-width: 350px; padding: 30px 30px;">
+
+          <h3 class="fw-normal mb-1" style="font-size: 22px; opacity: 0.95;">
+            Увлажняющий крем для лица
+          </h3>
+          <h1 class="fw-bold mb-5" style="font-size: 48px; line-height: 1;">
+            Nivea Care
+          </h1>
+
+          <img src="assets/img/45775-37d96ae144600368f82953853da9d3a4 1.svg" alt="Nivea Care"
+              class="mx-auto mb-4"
+              style="max-height: 55%; object-fit: contain;">
+
+          <a href="#" class="btn btn-white rounded-pill px-3 py-3 fw-bold text-white shadow-lg d-inline-flex align-items-center gap-3 mx-auto"
+            style="margin-top: -250px; background: #E74C38;">
+            ПЕРЕЙТИ В КАТАЛОГ
+            <img src="assets/img/Arrow_right.svg" alt="→" width="24">
+          </a>
+        </div>
+      </div>
+
+      <!-- Мини-товары — только на десктопе, справа от баннера -->
+      <div class="col-xl-5 d-none d-xl-block">
+        <div class="row g-3 h-200">
+          <div class="col-12">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="row g-0 align-items-center h-100">
+                <div class="col-5">
+                  <img src="assets/img/add 1.svg" class="img-fluid rounded-start" alt="">
+                </div>
+                <div class="col-7">
+                  <div class="card-body py-3">
+                    <h6 class="small mb-1">Налгес Бинты Кожа, волосы, ногти капсулы 60 шт</h6>
+                    <p class="text-success fw-bold mb-0">249 ₽</p>
+                    <div class="text-warning small">★★★★★</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="row g-0 align-items-center h-100">
+                <div class="col-5">
+                  <img src="assets/img/add 1.svg" class="img-fluid rounded-start" alt="">
+                </div>
+                <div class="col-7">
+                  <div class="card-body py-3">
+                    <h6 class="small mb-1">Аципол® – препарат от ОРВИ и гриппа, 10 таблеток</h6>
+                    <p class="text-success fw-bold mb-0">145 ₽</p>
+                    <div class="text-warning small">★★★★☆</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Мини-товары под баннерами на мобильных и планшетах -->
+<div class="row g-3 mt-4 d-xl-none">
+  <div class="col-6 col-md-4">
+    <div class="card border-0 shadow-sm">
+      <img src="assets/img/product1.png" class="card-img-top" alt="">
+      <div class="card-body p-3">
+        <h6 class="small mb-1">Налгес Бинты Кожа, волосы, ногти капсулы 60 шт</h6>
+        <p class="text-success fw-bold">249 ₽</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4">
+    <div class="card border-0 shadow-sm">
+      <img src="assets/img/product2.png" class="card-img-top" alt="">
+      <div class="card-body p-3">
+        <h6 class="small mb-1">Аципол® – препарат от ОРВИ и гриппа, 10 таблеток</h6>
+        <p class="text-success fw-bold">145 ₽</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Мини-товары на мобильных (под баннерами) -->
+  <div class="row g-3 mt-4 d-lg-none">
+    <div class="col-6 col-md-4">
+      <div class="card border-0 shadow-sm">
+        <img src="assets/img/product1.png" class="card-img-top" alt="">
+        <div class="card-body p-3">
+          <h6 class="small mb-1">Налгес Бинты Кожа, волосы, ногти капсулы 60 шт</h6>
+          <p class="text-success fw-bold">249 ₽</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="card border-0 shadow-sm">
+        <img src="assets/img/product2.png" class="card-img-top" alt="">
+        <div class="card-body p-3">
+          <h6 class="small mb-1">Аципол® – препарат от ОРВИ и гриппа, 10 таблеток</h6>
+          <p class="text-success fw-bold">145 ₽</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="card border-0 shadow-sm">
+        <img src="assets/img/product3.png" class="card-img-top" alt="">
+        <div class="card-body p-3">
+          <h6 class="small mb-1">Доктор – леденцы при простуде и кашле, 30 шт</h6>
+          <p class="text-success fw-bold">444 ₽</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
 
   <!-- Футер с карточкой обратной связи -->
   <footer class="footer-bg text-white">
     <div class="container position-relative">
 
       <div class="feedback-card mx-auto" style="margin-top: -40px; margin-bottom: 55px; max-width: 1360px;">
-        <div class="bg-white rounded-4 shadow-lg p-4 p-md-5" style="box-shadow: 0 20px 40px rgba(0,0,0,0.12);)">
+        <div class="bg-white rounded-4 shadow-lg p-4 p-md-5" style="box-shadow: 0 20px 40px rgba(0,0,0,0.12);">
           <h4 class="text-dark mb-4 text-center text-md-start fw-semibold">Остались вопросы?</h4>
           <div class="row align-items-center g-4 g-xl-5">
             <div class="col-lg-3 col-md-6">
@@ -193,11 +377,11 @@
           <div class="col-lg-2 col-md-6">
             <div class="mb-4">
               <div class="d-flex align-items-center mb-3">
-                <img src="assets/img/Message_open_white.svg" width="20" class="me-3" alt="">
+                <img src="assets/img/Message_open.svg" width="20" class="me-3" alt="">
                 <a href="mailto:INFO@RESTOLL.RU" class="text-white text-decoration-none fw-bold">INFO@RESTOLL.RU</a>
               </div>
               <div class="d-flex align-items-center">
-                <img src="assets/img/Phone_duotone_white.svg" width="20" class="me-3" alt="">
+                <img src="assets/img/Phone_duotone.svg" width="20" class="me-3" alt="">
                 <a href="tel:88007772233" class="text-white text-decoration-none fw-bold">
                   8-800-777-22-33<br>
                   <small class="opacity-75">(круглосуточно)</small>

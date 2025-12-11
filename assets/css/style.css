@@ -1,6 +1,7 @@
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
   margin: 0;
+  background: #f8f9fa;
 }
 
 .header-top {
@@ -168,4 +169,25 @@ body {
     font-size: 0.82rem;
     padding: 7px 8px;
   }
+}
+.site-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+@media (max-width: 1600px) {
+  .site-wrapper { padding-left: 120px; padding-right: 120px; }
+}
+@media (max-width: 1400px) {
+  .site-wrapper { padding-left: 80px; padding-right: 80px; }
+}
+@media (max-width: 1200px) {
+  .site-wrapper { padding-left: 60px; padding-right: 60px; }
+}
+@media (max-width: 992px) {
+  .site-wrapper { padding-left: 30px; padding-right: 30px; }
+}
+@media (max-width: 576px) {
+  .site-wrapper { padding-left: 15px; padding-right: 15px; }
 }
