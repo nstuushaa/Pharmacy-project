@@ -1,10 +1,8 @@
-/* === Общие стили === */
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
   margin: 0;
 }
 
-/* === Верхняя полоска === */
 .header-top {
   background: #fff;
   font-size: 0.9rem;
@@ -12,46 +10,25 @@ body {
   padding: 10px 0;
 }
 
-/* === Основной хедер === */
 .header-main {
   background: #fff;
   padding: 28px 0;
 }
 
-/* === Меню категорий — ВСЕГДА В ОДНУ СТРОКУ + горизонтальная прокрутка на мобильных === */
 .nav-category {
-  background: linear-gradient(to right, #0d47a1, #00bfa5);
+  background: linear-gradient(90deg, #0d47a1 0%, #00bfa5 100%);
 }
 
-/* Обёртка с прокруткой */
-.nav-category .scroll-container {
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch; /* плавная прокрутка на iOS */
-}
-
-/* Скрываем скроллбар, но оставляем прокрутку */
-.nav-category .scroll-container::-webkit-scrollbar {
-  display: none;
-}
-.nav-category .scroll-container {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-/* Сам список — строго в одну строку */
 .nav-category-list {
   display: flex;
-  justify-content: space-between;
-  gap: 15px;                    /* ← ровно 15px между пунктами */
-  list-style: none;
+  gap: 15px;
   padding: 12px 0;
   margin: 0;
-  flex-wrap: nowrap;            /* запрещаем перенос */
-  overflow: hidden;             /* если что-то вылезет — обрезаем */
+  list-style: none;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
-/* Ссылки в меню */
 .nav-category-link {
   color: white;
   font-weight: 500;
@@ -63,31 +40,29 @@ body {
   display: flex;
   align-items: center;
   transition: all 0.25s ease;
-  flex-shrink: 1;               /* позволяем немного сжиматься при нехватке места */
-  min-width: 0;                 /* важно для корректного сжатия текста */
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .nav-category-link:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255,255,255,0.2);
 }
 
-/* === Логотип === */
 .logo-text {
   font-size: 1.55rem;
   font-weight: 800;
   color: #222;
 }
 
-/* === Контакты === */
 .text-dark-gray {
   color: #565656 !important;
   transition: color 0.2s;
 }
+
 .text-dark-gray:hover {
   color: #333 !important;
 }
 
-/* === Круглые кнопки (поиск и корзина) === */
 .btn-icon-round {
   display: flex;
   align-items: center;
@@ -98,16 +73,14 @@ body {
   border-radius: 50%;
   background: #fff;
   transition: all 0.3s ease;
-  flex-shrink: 0;
 }
 
 .btn-icon-round:hover {
   border-color: #00bfa5;
   background: #f8fffe;
-  box-shadow: 0 0 0 5px rgba(0, 191, 165, 0.15);
+  box-shadow: 0 0 0 5px rgba(0,191,165,0.15);
 }
 
-/* === Кнопка "Заказать звонок" === */
 .btn-call {
   background: #00bfa5;
   color: white;
@@ -124,13 +97,62 @@ body {
   background: #008f7a;
 }
 
-/* === Адаптивность === */
+.footer-bg {
+  background: linear-gradient(90deg, #0d47a1 0%, #00bfa5 100%);
+  color: white;
+  overflow: hidden;
+}
+
+.footer-bg a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.footer-bg a:hover {
+  opacity: 0.8;
+}
+
+.footer-bg img {
+  filter: brightness(0) invert(1);
+}
+
+.feedback-card .bg-white {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.feedback-card .form-control {
+  height: 56px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.feedback-card button {
+  height: 56px;
+  background: #00bfa5;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,191,165,0.45);
+  transition: background 0.3s;
+}
+
+.feedback-card button:hover {
+  background: #009f8a;
+}
+
+.hover-opacity {
+  transition: opacity 0.2s;
+}
+
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 1200px) {
   .nav-category-link {
     font-size: 0.89rem;
     padding: 9px 12px;
   }
 }
+
 @media (max-width: 992px) {
   .nav-category-list {
     gap: 12px;
@@ -140,6 +162,7 @@ body {
     padding: 8px 10px;
   }
 }
+
 @media (max-width: 768px) {
   .nav-category-link {
     font-size: 0.82rem;
