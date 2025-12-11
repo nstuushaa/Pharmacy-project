@@ -1,7 +1,6 @@
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
   margin: 0;
-  background: #f8f9fa;
 }
 
 .header-top {
@@ -170,24 +169,128 @@ body {
     padding: 7px 8px;
   }
 }
-.site-wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding-left: 200px;
-  padding-right: 200px;
+
+.advantages-block {
+  background: #fff;
 }
-@media (max-width: 1600px) {
-  .site-wrapper { padding-left: 120px; padding-right: 120px; }
+
+.advantages-block img {
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.1));
+  transition: transform 0.3s ease;
 }
-@media (max-width: 1400px) {
-  .site-wrapper { padding-left: 80px; padding-right: 80px; }
+
+.advantages-block .d-flex:hover img {
+  transform: translateY(-4px);
 }
-@media (max-width: 1200px) {
-  .site-wrapper { padding-left: 60px; padding-right: 60px; }
+
+.advantages-block h6 {
+  font-size: 1.1rem;
+  color: #222;
 }
+
+.advantages-block p {
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+/* На мобильных — иконка сверху */
+@media (max-width: 768px) {
+  .advantages-block .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .advantages-block img {
+    margin-bottom: 12px;
+  }
+}
+.promotions-section .product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.promotions-section .product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+}
+
+.promotions-section .badge {
+  font-size: 0.75rem;
+}
+
+.promotions-section .btn-success {
+  background: #00bfa5;
+  border: none;
+}
+
+.promotions-section .btn-success:hover {
+  background: #009f8a;
+}
+
+/* Слайдер (используем простой owl-carousel или slick, или Bootstrap carousel) */
+.promotions-slider .row {
+  overflow: hidden;
+}
+
+/* Для настоящего слайдера подключи slick или swiper.js */
+
+.how-we-work {
+  background: #fff;
+}
+
+.step-icon img {
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.1));
+  transition: transform 0.3s ease;
+}
+
+.how-we-work .d-flex:hover .step-icon img {
+  transform: translateY(-4px);
+}
+
+.step-number {
+  font-size: 2rem;
+}
+
+.how-we-work h5 {
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.how-we-work p {
+  line-height: 1.5;
+}
+
+/* На мобильных — иконка сверху */
+@media (max-width: 768px) {
+  .how-we-work .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .how-we-work .step-icon {
+    margin-bottom: 16px;
+  }
+}
+
+.reviews-section {
+  background: #f8fffe;
+}
+
+.reviews-section .shadow {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08) !important;
+}
+
+.reviews-section .btn-success {
+  background: #00bfa5;
+  border: none;
+}
+
+.reviews-section .btn-success:hover {
+  background: #009f8a;
+}
+
+.reviews-section .text-warning {
+  letter-spacing: 2px;
+}
+
 @media (max-width: 992px) {
-  .site-wrapper { padding-left: 30px; padding-right: 30px; }
-}
-@media (max-width: 576px) {
-  .site-wrapper { padding-left: 15px; padding-right: 15px; }
+  .reviews-section .sticky-top {
+    position: static !important;
+  }
 }
